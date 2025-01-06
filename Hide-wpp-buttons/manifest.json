@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Hide WPP Web Buttons",
   "description": "A simple extension to hide WhatsApp Web's buttons (Status, Channels and Communities). - UNOFFICIAL",
-  "version": "3.0",
+  "version": "3.1",
   "icons": {
     "16": "/Icons/icon-16.png",
     "48": "/Icons/icon-48.png",
@@ -22,5 +22,15 @@
       "128": "/Icons/icon-128.png"
     }
   },
-  "permissions": ["storage"]
+  "permissions": ["storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "type": "module"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{ea7cb967-a5b1-409d-bfd3-ef455e85a0a2}",
+      "strict_min_version": "109.0"
+    }
+  }
 }
